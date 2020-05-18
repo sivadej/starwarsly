@@ -1,3 +1,13 @@
+/*
+Film Component:
+Displays data for a film passed as id by url parameter.
+List the film's associated Planets and People using Sublist component.
+
+Component will use film data from Redux store.
+If the film doesn't exist in the Redux store,
+retreive film data from API.
+*/
+
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import {useParams} from "react-router-dom";

@@ -1,3 +1,9 @@
+/*
+FilmList Component:
+Displays list of films 
+
+*/
+
 import React from 'react';
 import { useSelector } from 'react-redux';
 

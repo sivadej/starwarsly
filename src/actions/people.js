@@ -13,6 +13,7 @@ function getPersonFromAPI(id) {
       films
     } = res.data;
 
+    // extract only id values from urls
     films = films.map(url => url.match(/\d+/)[0]);
     homeworld = homeworld.match(/\d+/)[0];
 
