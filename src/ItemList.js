@@ -1,3 +1,11 @@
+/*
+  ItemList Component:
+    Render header text and list of items from props.
+    Display message on empty props.
+    Props: items - Array of objects [ { id, name, url }, { id, name, url }, ... ]
+           title - string
+*/
+
 import React from 'react';
 import { Link } from "react-router-dom";
 
@@ -23,6 +31,5 @@ function ItemList({items, title}) {
     </>
   );
 }
-
 
 export default ItemList;

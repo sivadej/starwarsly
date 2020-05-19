@@ -1,9 +1,13 @@
+/*
+  HomePage Component:
+    Display button to 'films/1' if no data has been explored yet.
+    If exploration has started, display button to reset.
+*/
+
 import React from 'react';
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from 'react-redux';
-
 import { resetAll } from "./actions/reset";
-
 
 function HomePage() {
   const loaded = useSelector(st => st.films[1] !== undefined);
