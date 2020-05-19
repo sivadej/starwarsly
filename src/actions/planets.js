@@ -13,6 +13,8 @@ function getPlanetFromAPI(id) {
       films
     } = res.data;
 
+    // store only id's from url strings into arrays:
+    //    'https://swapi.dev/films/5/' -> '5'
     residents = residents.map(url => url.match(/\d+/)[0]);
     films = films.map(url => url.match(/\d+/)[0]);
 

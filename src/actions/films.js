@@ -1,7 +1,6 @@
 import axios from 'axios';
 import { LOAD_FILM } from "./types";
 
-
 function getFilmFromAPI(id) {
   return async function (dispatch) {
     const res = await axios.get(`https://swapi.dev/api/films/${id}/`);
@@ -13,6 +12,8 @@ function getFilmFromAPI(id) {
       planets
     } = res.data;
 
+    // store only id's from url strings into arrays:
+    //    'https://swapi.dev/planets/25/' -> '25'
     characters = characters.map(url => url.match(/\d+/)[0]);
     planets = planets.map(url => url.match(/\d+/)[0]);
 

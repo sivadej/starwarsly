@@ -13,7 +13,8 @@ function getPersonFromAPI(id) {
       films
     } = res.data;
 
-    // extract only id values from urls
+    // store only id's from url strings into arrays:
+    //    'https://swapi.dev/films/5/' -> '5'
     films = films.map(url => url.match(/\d+/)[0]);
     homeworld = homeworld.match(/\d+/)[0];
 
