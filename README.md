@@ -23,7 +23,7 @@ Information on films, planets, and people are revealed as you continue to explor
 - SWAPI.dev - The Star Wars API
 
 ## Installation
-Some quick summary on how to install it and run it on your own machine
+Clone this repo to your local machine and install the dependencies using npm:
 
 ```
 > git clone https://github.com/sivadej/starwarsly.git
